@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Thomas More">
+    <title>Anoroc Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    /* The alert message box */
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        /* Red */
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .succes {
+        padding: 20px;
+        background-color: green;
+        /* Red */
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .Betaling {
+        padding: 20px;
+        background-color: lightblue;
+        /* Red */
+        color: white;
+        margin-bottom: 15px;
+    }
+
+
+    /* The close button */
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    /* When moving the mouse over the close button */
+    .closebtn:hover {
+        color: black;
+    }
+
+    body {
+        margin-top: 4rem;
+    }
+
+    .navbar {
+        background-image: linear-gradient(141deg, #2d2d2d 0%, #9fb8ad 51%, #82e0c2 75%);
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Anoroc Services</a>
+    </nav>
+
+    <main role="main" class="container">
+
+        <h1>Registreer</h1>
+        <p class="lead">Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+
+        <div class="row">
+            <div class="col-md-8">
+                <!-- ONTWERP HIER HET FORMULIER OP -->
+                <form action="action_page.php">
+                    <div class="container">
+
+                        <table>
+                            <tr>
+                                <th>Voornaam</th>
+                                <th>Naam</th>
+                            </tr>
+                            <td class=""><input type="text" ng-model="" naam="Voornaam" value="Uw voornaam"></td>
+                            <td class=""><input type="text" ng-model="" naam="Naam" value="Uw naam"></td>
+                            <tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>Gebruikersnaam</th>
+                                <th>E-mailadres</th>
+                            </tr>
+                            <td class=""><input type="text" ng-model="" naam="Gebruikersnaam" value="@u911236"></td>
+                            <td class=""><input type="text" ng-model="" naam="mailadres" value="mail@example.be"></td>
+                            <tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>wachtwoord</th>
+                                <th>herhaal wachtwoord</th>
+                            </tr>
+                            <td class=""><input type="text" ng-model="" name="wachtwoord"></td>
+                            <td class=""><input type="text" ng-model="" name="herhaal wachtwoord"></td>
+                            <tr>
+
+                        </table>
+                        <p>Je wachtwoord moet minimum 8 tekens lang zijn </p>
+                        <table width="180">
+                            <tr>
+                                <th>Adres</th>
+                            </tr>
+                            <td class=""><input type="text" ng-model="" name="Adres"></td>
+                            <tr>
+                        </table>
+                        <table>
+                            <tr>
+
+                                <th>Land</th>
+                                <th>Provincie</th>
+                                <th>Postcode</th>
+                            </tr>
+                            <td class=""> <select name="land">
+                                    <option selected="" value="Default">(Kies een land)</option>
+                                    <option value="AF">Australia</option>
+                                    <option value="AL">Canada</option>
+                                    <option value="DZ">India</option>
+                                    <option value="AS">Russia</option>
+                                    <option value="AD">USA</option>
+                                    <option value="BE">Belgium</option>
+                                </select></td>
+                            <td class=""> <select name="provincie">
+                                    <option selected="" value="Default">(kies een provincie)</option>
+                                    <option value="An">Antwerpen</option>
+                                    <option value="Br">Brussel</option>
+                                    <option value="Li">Limburg</option>
+                                </select></td>
+                            <td class=""> <select name="postcode">
+                                    <option selected="" value="Default">(Postcode)</option>
+                                    <option value="AF">2490</option>
+                                    <option value="AL">6666</option>
+                                </select></td>
+                            <tr>
+                        </table>
+                        <form action="/action_page.php">
+                            <p>Hou me op de hoogte</p>
+                            <input type="radio" id="Inschrijven" name="Inschrijven voor onze nieswsbrief" value="ja">
+                            <label for="Inschrijven voor onze nieswsbrief">Inschrijven voor onze nieswsbrief</label><br>
+                            <input type="radio" id="akkoord" name="akkoord" value="akkoord">
+                            <label for="ik ga akkoord met de algemene voorwaarden">akkoord</label><br>
+
+                            <br>
+
+                            <p>Betaling</p>
+                            <input type="radio" id="Banking app" name="Banking app" value="30">
+                            <label for="Banking app">Banking app</label><br>
+                            <input type="radio" id="overschrijving" name="overschrijving" value="60">
+                            <label for="overschrijving">overschrijving</label><br>
+                            <input type="radio" id="Visa Card" name="Visa Card" value="100">
+                            <label for="Visa Card">Visa Card</label><br>
+                            <input type="radio" value="Paypal">
+                            <label for="Paypal">Paypal</label><br><br>
+                        </form>
+
+                        <hr>
+                       
+
+
+                        <button id="Wand" on click="myFunction()" type="submit" class="registerbtn">Wave your magic
+                            wand</button>
+                        <p id="demo"></p>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+            <div class="col-md-4">
+                <!--  ONTWERP HIER 3 ALERT MELDINGEN -->
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Yikes, Errors...
+                </div>
+                <div class="succes">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Goed gedaan. <br><br>
+                    aww yeah je bent geregistreerd!
+                </div>
+                <div class="Betaling">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Betalingswijze.
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        /* 
+            NAAM: Alejandro Claes
+            STUD-NR: r0785488
+            GROEP: GRP D1.1
+        */
+        // PROGRAMMEER HIERONDER JOUW SCRIPT
+
+        function myFunction() {
+            var x = document.getElementById("Wand").required;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+
+    <script>
+        // Get all elements with class="closebtn"
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+
+        // Loop through all close buttons
+        for (i = 0; i < close.length; i++) {
+            // When someone clicks on a close button
+            close[i].onclick = function () {
+
+                // Get the parent of <span class="closebtn"> (<div class="alert">)
+                var div = this.parentElement;
+
+                // Set the opacity of div to 0 (transparent)
+                div.style.opacity = "0";
+
+                // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+                setTimeout(function () {
+                    div.style.display = "none";
+                }, 600);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
